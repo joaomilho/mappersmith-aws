@@ -1,7 +1,7 @@
 {
   "name": "mappersmith-aws",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.0.2",
+  "main": "index.ts",
   "author": "Juan Lulkin",
   "license": "MIT",
   "scripts": {

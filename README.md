@@ -26,22 +26,22 @@ const api = forge({
 
 ### Params:
 
-**systemClockOffset** 
+**region** (mandatory)
+<small>string</small>
+AWS region.
+
+**service** (mandatory)
+<small>string</small> 
+Name of the AWS service (s3, execute-api, etc...).
+
+**systemClockOffset** (optional)
 <small>number</small> `0`
 Compensate for clock skew when your system may be out of sync with the AWS service time.
 
-**region**
-<small>string</small> `"us-east-1"`
-AWS region.
-
-**service**
-<small>string</small> `undefined`
-Name of the AWS service (s3, execute-api, etc...).
-
-**logger**
+**logger** (optional)
 <small>Console</small> `console`
 A logger to write debug details.
 
-**credentialsProvider**
+**credentialsProvider** (optional)
 <small>() => Promise\<AWS.Credentials\></small> `() => AWS.config.credentialProvider.resolvePromise()`
 An async function returning credentials.

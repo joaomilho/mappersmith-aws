@@ -1,0 +1,26 @@
+{
+  "name": "mappersmith-aws",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Juan Lulkin",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/crypto-js": "^4.0.1",
+    "@types/node": "^14.11.8",
+    "aws-sdk": "^2.771.0",
+    "crypto-js": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.14",
+    "jest": "^26.5.2",
+    "mappersmith": "^2.33.3",
+    "mockdate": "^3.0.2",
+    "prettier": "^2.1.2",
+    "ts-jest": "^26.4.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  }
+}

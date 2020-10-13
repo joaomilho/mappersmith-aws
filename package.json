@@ -1,12 +1,17 @@
 {
   "name": "mappersmith-aws",
-  "version": "0.0.3",
-  "main": "index.ts",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "Juan Lulkin",
   "license": "MIT",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "test": "jest",
-    "build" : "tsc"
+    "build": "tsc --outDir dist",
+    "prepublish": "rm -rf dist && yarn build"
   },
   "dependencies": {
     "@types/crypto-js": "^4.0.1",
